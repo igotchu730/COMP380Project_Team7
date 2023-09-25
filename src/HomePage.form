@@ -16,7 +16,7 @@
           <dividerLocation value="555"/>
           <dividerSize value="0"/>
           <enabled value="false"/>
-          <resizeWeight value="0.25"/>
+          <resizeWeight value="0.35"/>
         </properties>
         <border type="none"/>
         <children>
