@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="HomePage">
   <grid id="27dc6" binding="mainFrame" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="240" y="344" width="1750" height="1023"/>
+      <xy x="240" y="344" width="5167" height="3072"/>
     </constraints>
     <properties>
       <background color="-3426460"/>
@@ -13,10 +13,10 @@
       <splitpane id="18edf" binding="splitPane">
         <constraints border-constraint="Center"/>
         <properties>
-          <dividerLocation value="555"/>
+          <dividerLocation value="559"/>
           <dividerSize value="0"/>
           <enabled value="false"/>
-          <resizeWeight value="0.35"/>
+          <resizeWeight value="0.0"/>
         </properties>
         <border type="none"/>
         <children>
@@ -160,15 +160,14 @@
             </properties>
             <border type="none"/>
             <children>
-              <component id="801d4" class="javax.swing.JLabel" binding="BGImage">
+              <grid id="b3563" binding="backgroundImage" layout-manager="BorderLayout" hgap="0" vgap="0">
                 <constraints>
                   <card name="Card1"/>
                 </constraints>
-                <properties>
-                  <icon value="Images/bg2.jpg"/>
-                  <text value=""/>
-                </properties>
-              </component>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
             </children>
           </grid>
         </children>
