@@ -10,7 +10,7 @@ public class ImagePanel extends JPanel {
 
     public ImagePanel() {
         try {
-            backgroundImage = ImageIO.read(new File("src/Images/B2.jpeg"));
+            backgroundImage = ImageIO.read(new File("src/main/java/Images/B2.jpeg"));
         } catch (IOException e) {
             e.printStackTrace();
         }
