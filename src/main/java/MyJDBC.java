@@ -1,24 +1,28 @@
 import java.sql.*;
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
 
 public class MyJDBC {
 
     MyJDBC() {
 
-        try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://project380.chazaxvumqbx.us-west-1.rds.amazonaws.com:3306/main", "admin", "password");
-            //returns a connection to a specific database
+        HikariConfig config = new HikariConfig();
+        config.setJdbcUrl("jdbc:mysql://project380.chazaxvumqbx.us-west-1.rds.amazonaws.com:3306/main");
+        config.setUsername("admin");
+        config.setPassword("password");
 
-            if (connection != null) {
-                System.out.println("MySQL Database Connection Successful");
-            } else {
-                System.err.println("Failed to connect to the database.");
-            }
+        HikariDataSource dataSource = new HikariDataSource(config);
 
-            //For testing
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("select * from test");
+        try { //testing connection
+            String sql = "SELECT test_column FROM test";
+
+            Connection connection = dataSource.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
             while (resultSet.next()) {
-                System.out.println(resultSet.getString("test_column"));
+                String columnValue = resultSet.getString("test_column");
+                System.out.println("Value from test: " + columnValue);
             }
 
         } catch (Exception e) {
