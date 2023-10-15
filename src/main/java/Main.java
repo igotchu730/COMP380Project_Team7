@@ -2,7 +2,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        MyJDBC myJDBC = new MyJDBC();
+        DatabaseAccess dbAccess = new DatabaseAccess(); //test
+        dbAccess.queryData(); //test
+
         HomePage homePage = new HomePage();
 
     }
