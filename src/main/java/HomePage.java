@@ -1,7 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class HomePage extends JFrame{
+public class HomePage extends JFrame implements ActionListener {
 
     private JPanel mainFrame;
     private JPanel menuPanel;
@@ -11,7 +13,7 @@ public class HomePage extends JFrame{
     private JButton button2;
     private JButton button3;
     private JButton button4;
-    private JButton button5;
+    private JButton adminButton;
     private JSplitPane splitPane;
     private JPanel Logo;
     private JLabel mainLogo;
@@ -29,6 +31,19 @@ public class HomePage extends JFrame{
         this.setSize(1500,1000);
         this.setMinimumSize(new Dimension(1000, 500));
         this.setVisible(true);
+
+        adminButton.setFocusable(false);
+        adminButton.addActionListener(this);
+
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == adminButton && !LoginPage.isLoggedIn){
+            LoginPage loginPage = new LoginPage();
+        }
+        if(e.getSource() == adminButton && LoginPage.isLoggedIn){
+            AdminPage adminPage = new AdminPage();
+        }
     }
 
 }

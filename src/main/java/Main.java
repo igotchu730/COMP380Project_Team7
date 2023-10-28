@@ -4,6 +4,8 @@ public class Main {
 
         DatabaseAccess dbAccess = new DatabaseAccess(); //test
         dbAccess.queryData(); //test
+        dbAccess.getUserName("admin"); //test
+        dbAccess.getPassword("admin"); //test
 
         HomePage homePage = new HomePage();
 
