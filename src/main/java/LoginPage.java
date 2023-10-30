@@ -29,7 +29,6 @@ public class LoginPage extends JFrame implements ActionListener {
         this.setLocationRelativeTo(null);
 
         errorMessage.setVisible(false);
-        loginButton.setFocusable(false);
         loginButton.addActionListener(this);
         KeyAdapter enterKeyAdapter = new KeyAdapter() {
             @Override

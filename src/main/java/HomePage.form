@@ -47,6 +47,7 @@
                     </constraints>
                     <properties>
                       <background color="-15456433"/>
+                      <focusable value="false"/>
                       <font name="Copperplate Gothic Light" size="15" style="1"/>
                       <foreground color="-3755685"/>
                       <text value="Button"/>
@@ -58,6 +59,7 @@
                     </constraints>
                     <properties>
                       <background color="-15456433"/>
+                      <focusable value="false"/>
                       <font name="Copperplate Gothic Light" size="15" style="1"/>
                       <foreground color="-3755685"/>
                       <text value="Button"/>
@@ -69,6 +71,7 @@
                     </constraints>
                     <properties>
                       <background color="-15456433"/>
+                      <focusable value="false"/>
                       <font name="Copperplate Gothic Light" size="15" style="1"/>
                       <foreground color="-3755685"/>
                       <text value="Button"/>
@@ -80,6 +83,7 @@
                     </constraints>
                     <properties>
                       <background color="-15456433"/>
+                      <focusable value="false"/>
                       <font name="Copperplate Gothic Light" size="15" style="1"/>
                       <foreground color="-3755685"/>
                       <text value="Button"/>
@@ -91,6 +95,7 @@
                     </constraints>
                     <properties>
                       <background color="-15456433"/>
+                      <focusable value="false"/>
                       <font name="Copperplate Gothic Light" size="15" style="1"/>
                       <foreground color="-3755685"/>
                       <text value="ADMINISTRATOR"/>

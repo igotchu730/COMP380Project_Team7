@@ -47,6 +47,7 @@
         <properties>
           <background color="-15456434"/>
           <enabled value="true"/>
+          <focusable value="false"/>
           <foreground color="-2245316"/>
           <text value="Log Out"/>
         </properties>

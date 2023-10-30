@@ -32,7 +32,6 @@ public class HomePage extends JFrame implements ActionListener {
         this.setMinimumSize(new Dimension(1000, 500));
         this.setVisible(true);
 
-        adminButton.setFocusable(false);
         adminButton.addActionListener(this);
 
     }

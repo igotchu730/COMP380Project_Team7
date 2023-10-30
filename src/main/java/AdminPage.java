@@ -16,7 +16,6 @@ public class AdminPage extends JFrame implements ActionListener {
         this.setLocationRelativeTo(null);
 
         logOutButton.addActionListener(this);
-        logOutButton.setFocusable(false);
     }
 
     public void actionPerformed(ActionEvent e) {
