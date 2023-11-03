@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
@@ -25,8 +26,8 @@ public class LoginPage extends JFrame implements ActionListener {
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setSize(400,500);
         this.setResizable(false);
-        this.setVisible(true);
         this.setLocationRelativeTo(null);
+        this.setVisible(true);
 
         errorMessage.setVisible(false);
         loginButton.addActionListener(this);
@@ -40,6 +41,13 @@ public class LoginPage extends JFrame implements ActionListener {
         };
         userField.addKeyListener(enterKeyAdapter);
         pwField.addKeyListener(enterKeyAdapter);
+
+        //For logo
+        ImageIcon logIcon = new ImageIcon("src/Icons/login_Icon.png");
+        Image image1 = logIcon.getImage();
+        Image newimg1 = image1.getScaledInstance(128, 128,  java.awt.Image.SCALE_SMOOTH);
+        logIcon = new ImageIcon(newimg1);
+        loginIcon.setIcon(logIcon);
 
     }
 

@@ -9,10 +9,10 @@ public class HomePage extends JFrame implements ActionListener {
     private JPanel menuPanel;
     private JPanel displayPanel;
     private JPanel buttonContainer;
-    private JButton button1;
-    private JButton button2;
+    private JButton ourRoomsButton;
+    private JButton bookARoomButton;
     private JButton button3;
-    private JButton button4;
+    private JButton aboutUsButton;
     private JButton adminButton;
     private JSplitPane splitPane;
     private JPanel Logo;
@@ -33,6 +33,14 @@ public class HomePage extends JFrame implements ActionListener {
         this.setVisible(true);
 
         adminButton.addActionListener(this);
+        ourRoomsButton.addActionListener(this);
+
+        //For logo
+        ImageIcon logo = new ImageIcon("src/Icons/hotelLogo.png");
+        Image image1 = logo.getImage();
+        Image newimg1 = image1.getScaledInstance(128, 128,  java.awt.Image.SCALE_SMOOTH);
+        logo = new ImageIcon(newimg1);
+        mainLogo.setIcon(logo);
 
     }
     @Override
@@ -42,6 +50,9 @@ public class HomePage extends JFrame implements ActionListener {
         }
         if(e.getSource() == adminButton && LoginPage.isLoggedIn){
             AdminPage adminPage = new AdminPage();
+        }
+        if(e.getSource() == ourRoomsButton){
+            OurRooms ourRooms = new OurRooms();
         }
     }
 

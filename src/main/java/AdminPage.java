@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -6,6 +7,7 @@ public class AdminPage extends JFrame implements ActionListener {
     private JPanel mainFrame;
     private JLabel adminTitle;
     private JButton logOutButton;
+    private JLabel adminIcon;
 
     AdminPage(){
         this.add(mainFrame);
@@ -16,6 +18,14 @@ public class AdminPage extends JFrame implements ActionListener {
         this.setLocationRelativeTo(null);
 
         logOutButton.addActionListener(this);
+
+        //For adminIcon
+        ImageIcon admIcon = new ImageIcon("src/Icons/adminIcon.png");
+        Image image1 = admIcon.getImage();
+        Image newimg1 = image1.getScaledInstance(128, 128,  java.awt.Image.SCALE_SMOOTH);
+        admIcon = new ImageIcon(newimg1);
+        adminIcon.setIcon(admIcon);
+
     }
 
     public void actionPerformed(ActionEvent e) {
