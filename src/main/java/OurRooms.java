@@ -1,5 +1,4 @@
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -40,8 +39,6 @@ public class OurRooms extends JFrame implements ActionListener {
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setSize(1000,1000);
-        //this.setVisible(true);
-        //this.setLocationRelativeTo(null);
 
         mainScrollPane.getVerticalScrollBar().setUnitIncrement(18);
         homeButton1.addActionListener(this);
@@ -187,9 +184,6 @@ public class OurRooms extends JFrame implements ActionListener {
 
         this.setVisible(true);
     }
-
-        //home button
-
 
     @Override
     public void actionPerformed(ActionEvent e) {

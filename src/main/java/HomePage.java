@@ -10,7 +10,7 @@ public class HomePage extends JFrame implements ActionListener {
     private JPanel displayPanel;
     private JPanel buttonContainer;
     private JButton ourRoomsButton;
-    private JButton bookARoomButton;
+    private JButton bookRoomButton;
     private JButton button3;
     private JButton aboutUsButton;
     private JButton adminButton;
@@ -34,6 +34,7 @@ public class HomePage extends JFrame implements ActionListener {
 
         adminButton.addActionListener(this);
         ourRoomsButton.addActionListener(this);
+        bookRoomButton.addActionListener(this);
 
         //For logo
         ImageIcon logo = new ImageIcon("src/Icons/hotelLogo.png");
@@ -53,6 +54,9 @@ public class HomePage extends JFrame implements ActionListener {
         }
         if(e.getSource() == ourRoomsButton){
             OurRooms ourRooms = new OurRooms();
+        }
+        if(e.getSource() == bookRoomButton){
+            BookRoom bookRoom = new BookRoom();
         }
     }
 

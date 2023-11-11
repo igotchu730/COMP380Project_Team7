@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="BookRoom">
+  <grid id="27dc6" binding="mainFrame" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1027" height="1199"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="b7932" binding="mainScrollPane">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <verticalScrollBarPolicy value="22"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="b0bc4" binding="mainPanel" layout-manager="GridLayoutManager" row-count="18" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints/>
+            <properties>
+              <background color="-2501425"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="b99a0" binding="ourRoomsTitleContainer" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="100" left="0" bottom="100" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15456434"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f9d92" class="javax.swing.JLabel" binding="mainTitle">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Copperplate Gothic Light" size="72"/>
+                      <foreground color="-2245316"/>
+                      <text value="Book a Room"/>
+                    </properties>
+                  </component>
+                  <component id="54fa3" class="javax.swing.JLabel" binding="slogan">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Copperplate Gothic Light" size="20" style="2"/>
+                      <foreground color="-1909288"/>
+                      <text value="&quot;Pick your paradise.&quot; "/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <vspacer id="1dea3">
+                <constraints>
+                  <grid row="17" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <grid id="40b36" binding="singleContainer" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-2501425"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="3c19d" class="javax.swing.JLabel" binding="singleImg">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Copperplate Gothic Light" size="18"/>
+                      <foreground color="-15456434"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="The Single"/>
+                      <verticalTextPosition value="3"/>
+                    </properties>
+                  </component>
+                  <component id="e3a36" class="javax.swing.JLabel" binding="roomInfo1">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="3" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <foreground color="-15456434"/>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <hspacer id="a5141">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="1ee3a">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="6ef31" class="javax.swing.JButton" binding="bookButton1">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1185565"/>
+                      <focusable value="false"/>
+                      <foreground color="-15456434"/>
+                      <text value="Book"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="d7d4c" binding="doubleContainer" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-2501425"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="523dd" class="javax.swing.JLabel" binding="doubleImg">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Copperplate Gothic Light" size="18"/>
+                      <foreground color="-15456434"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="The Double"/>
+                      <verticalTextPosition value="3"/>
+                    </properties>
+                  </component>
+                  <component id="2e3c6" class="javax.swing.JLabel" binding="roomInfo2">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="3" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <foreground color="-15456434"/>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <hspacer id="b1ed3">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="e91e9">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="41d01" class="javax.swing.JButton" binding="bookButton2">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1185565"/>
+                      <focusable value="false"/>
+                      <foreground color="-15456434"/>
+                      <text value="Book"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="d4e5e" binding="familyContainer" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-2501425"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f13f5" class="javax.swing.JLabel" binding="famImg">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Copperplate Gothic Light" size="18"/>
+                      <foreground color="-15456434"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="The Family Suite"/>
+                      <verticalTextPosition value="3"/>
+                    </properties>
+                  </component>
+                  <component id="cd1e4" class="javax.swing.JLabel" binding="roomInfo3">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="3" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <foreground color="-15456434"/>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <hspacer id="f3949">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="8f2d3">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="75ced" class="javax.swing.JButton" binding="bookButton3">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1185565"/>
+                      <focusable value="false"/>
+                      <foreground color="-15456434"/>
+                      <text value="Book"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="b5154" binding="luxContainer" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="15" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-2501425"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="dd610" class="javax.swing.JLabel" binding="luxImg">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Copperplate Gothic Light" size="18"/>
+                      <foreground color="-15456434"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="The Luxury Suite"/>
+                      <verticalTextPosition value="3"/>
+                    </properties>
+                  </component>
+                  <component id="18353" class="javax.swing.JLabel" binding="roomInfo4">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="3" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <foreground color="-15456434"/>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <hspacer id="a7762">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="ee440">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="366e4" class="javax.swing.JButton" binding="bookButton4">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1185565"/>
+                      <focusable value="false"/>
+                      <foreground color="-15456434"/>
+                      <text value="Book"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <vspacer id="6ab9f">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="c9491">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="1e53f">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="daa22">
+                <constraints>
+                  <grid row="14" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="ef452" class="javax.swing.JLabel" binding="spacer1">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Copperplate Gothic Light" size="36"/>
+                  <foreground color="-2501425"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="10"/>
+                  <text value="X"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="e6b36" class="javax.swing.JLabel" binding="spacer2">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Copperplate Gothic Light" size="36"/>
+                  <foreground color="-2501425"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="10"/>
+                  <text value="X"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="3af6c" class="javax.swing.JLabel" binding="spacer3">
+                <constraints>
+                  <grid row="13" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Copperplate Gothic Light" size="36"/>
+                  <foreground color="-2501425"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="10"/>
+                  <text value="X"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="5a025" class="javax.swing.JLabel" binding="spacer4">
+                <constraints>
+                  <grid row="16" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Copperplate Gothic Light" size="36"/>
+                  <foreground color="-2501425"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="10"/>
+                  <text value="X"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="d50b9" class="javax.swing.JLabel" binding="spacer5">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Copperplate Gothic Light" size="36"/>
+                  <foreground color="-2501425"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="10"/>
+                  <text value="X"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="3d92b" class="javax.swing.JLabel" binding="spacer7">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Copperplate Gothic Light" size="28"/>
+                  <foreground color="-2501425"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="10"/>
+                  <text value="X"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <hspacer id="4a3b">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="1e0ee" class="javax.swing.JButton" binding="homeButton1">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1185565"/>
+                  <focusable value="false"/>
+                  <foreground color="-15456434"/>
+                  <text value="Home"/>
+                </properties>
+              </component>
+              <grid id="d1d54" binding="comboContainer" layout-manager="GridLayoutManager" row-count="3" column-count="11" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-2501425"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <hspacer id="46eea">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="a71fb">
+                    <constraints>
+                      <grid row="1" column="10" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="eab37" class="javax.swing.JComboBox" binding="checkInDay">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-856600"/>
+                      <focusable value="false"/>
+                      <popupVisible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="440fc" class="javax.swing.JComboBox" binding="checkInYear">
+                    <constraints>
+                      <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-856600"/>
+                      <focusable value="false"/>
+                      <popupVisible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="6c463" class="javax.swing.JComboBox" binding="checkOutMonth">
+                    <constraints>
+                      <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-856600"/>
+                      <focusable value="false"/>
+                      <popupVisible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="cb3fe" class="javax.swing.JComboBox" binding="checkOutDay">
+                    <constraints>
+                      <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-856600"/>
+                      <focusable value="false"/>
+                      <popupVisible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="8a756" class="javax.swing.JComboBox" binding="checkOutYear">
+                    <constraints>
+                      <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-856600"/>
+                      <focusable value="false"/>
+                      <popupVisible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="787a4" class="javax.swing.JLabel" binding="spacer8">
+                    <constraints>
+                      <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Copperplate Gothic Light" size="36"/>
+                      <foreground color="-2501425"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <iconTextGap value="10"/>
+                      <text value="XX"/>
+                      <verticalTextPosition value="1"/>
+                    </properties>
+                  </component>
+                  <component id="d5a00" class="javax.swing.JButton" binding="searchRooms">
+                    <constraints>
+                      <grid row="1" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1185565"/>
+                      <focusable value="false"/>
+                      <foreground color="-15456434"/>
+                      <text value="Search Rooms"/>
+                    </properties>
+                  </component>
+                  <component id="48acc" class="javax.swing.JLabel" binding="spacer9">
+                    <constraints>
+                      <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Copperplate Gothic Light" size="36"/>
+                      <foreground color="-2501425"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <iconTextGap value="10"/>
+                      <text value="XX"/>
+                      <verticalTextPosition value="1"/>
+                    </properties>
+                  </component>
+                  <component id="9c846" class="javax.swing.JLabel" binding="checkInLabel">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Copperplate Gothic Light" size="18"/>
+                      <foreground color="-15456434"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Check-In "/>
+                      <verticalTextPosition value="3"/>
+                    </properties>
+                  </component>
+                  <component id="d24e3" class="javax.swing.JLabel" binding="checkOutLabel">
+                    <constraints>
+                      <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Copperplate Gothic Light" size="18"/>
+                      <foreground color="-15456434"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Check-Out"/>
+                      <verticalTextPosition value="3"/>
+                    </properties>
+                  </component>
+                  <component id="5a3d9" class="javax.swing.JComboBox" binding="checkInMonth">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-856600"/>
+                      <focusable value="false"/>
+                      <model/>
+                      <name value=""/>
+                      <popupVisible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="cae4a" class="javax.swing.JLabel" binding="dateError">
+                    <constraints>
+                      <grid row="2" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Calibri" size="14"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Please select a valid date."/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="4c945" class="javax.swing.JLabel" binding="spacer11">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Copperplate Gothic Light" size="36"/>
+                  <foreground color="-2501425"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <iconTextGap value="10"/>
+                  <text value="XX"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
