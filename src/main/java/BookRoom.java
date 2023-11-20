@@ -177,6 +177,12 @@ public class BookRoom extends JFrame implements ActionListener {
         checkInMonth.addActionListener(this);
         checkOutMonth.addActionListener(this);
 
+
+        bookButton1.addActionListener(this);
+        bookButton2.addActionListener(this);
+        bookButton3.addActionListener(this);
+        bookButton4.addActionListener(this);
+
         this.setVisible(true);
 
     }
@@ -326,6 +332,18 @@ public class BookRoom extends JFrame implements ActionListener {
             }
             checkOutDay.setModel(new DefaultComboBoxModel(days2));
         }
+
+        //for book buttons
+        if (e.getSource() == bookButton1 || e.getSource() == bookButton2 ||
+            e.getSource() == bookButton3 || e.getSource() == bookButton4) {
+
+            SwingUtilities.invokeLater(() -> {
+                // Get the instance of Reservation. Only one instance of the frame can open at a time.
+                Reservation reservation = Reservation.getInstance();
+            });
+
+        }
+
     }
 
 }
