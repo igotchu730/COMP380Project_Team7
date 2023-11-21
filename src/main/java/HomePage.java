@@ -23,6 +23,13 @@ public class HomePage extends JFrame implements ActionListener {
 
     ImagePanel backgroundPanel = new ImagePanel();
 
+    /**
+     * HomePage: The first page that Main calls and the first thing users will see once program runs.
+     * Acts as a portal to other pages and functionalities.
+     * @since 2023-09-24
+     * @author Alan Chu
+     */
+
     HomePage(){
         this.add(mainFrame);
         backgroundImage.add(backgroundPanel, BorderLayout.CENTER);

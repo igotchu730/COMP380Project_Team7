@@ -5,6 +5,12 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
+/**
+ * ImagePanel: scales the background image of the MainPage
+ * @since 2023-09-25
+ * @author Alan Chu
+ */
+
 public class ImagePanel extends JPanel {
     private BufferedImage backgroundImage;
 

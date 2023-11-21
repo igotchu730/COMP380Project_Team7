@@ -3,10 +3,17 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 
+/**
+ * DatabaseAccess: Contains all the methods used with access to the database.
+ * @since 2023-10-11
+ * @author Mohammed Khan, Alan Chu, Chris Guevara
+ */
 
 public class DatabaseAccess {
     public static void queryData() {
@@ -123,6 +130,16 @@ public class DatabaseAccess {
         }
     }
 
+
+    /**
+     * getRoomAvailibility: Takes the user input selections of roomtype, checkin and checkout date,
+     * and finds if the room is available.
+     * @param roomType
+     * @param checkin
+     * @param checkout
+     * @return missingInts[0]
+     */
+
     public static int getRoomAvailibility(String roomType, String checkin, String checkout){
         DataSource dataSource = DatabaseManager.getDataSource();
 
@@ -153,7 +170,17 @@ public class DatabaseAccess {
         return getNumberofRooms(roomType) - availability;
     }
 
-    public int getRoomAssignment(String roomType, String checkin, String checkout) {
+
+    /**
+     * getRoomAssignment: Takes the user input selections of roomtype, checkin and checkout date,
+     * and assigns an available room number to the reservation.
+     * @param roomType
+     * @param checkin
+     * @param checkout
+     * @return missingInts[0]
+     */
+
+    public static int getRoomAssignment(String roomType, String checkin, String checkout) {
         DataSource dataSource = DatabaseManager.getDataSource();
         DatabaseAccess dbAccess = new DatabaseAccess();
 
@@ -276,18 +303,41 @@ public class DatabaseAccess {
         return currentDateTime.format(formatter);
     }
 
+
+    /**
+     * setReservation: takes user input info during reservation and adds it to the database.
+     * @param transaction_id
+     * @param transaction_date
+     * @param room_number
+     * @param room_type
+     * @param checkin_date
+     * @param checkout_date
+     * @param first_name
+     * @param last_name
+     * @param total_cost
+     * @param card_number
+     * @param card_month
+     * @param card_year
+     * @param email
+     * @param phone_number
+     * @param country
+     * @param address
+     * @param zip
+     * @param city
+     * @param state
+     */
     public static void setReservation(String transaction_id, String transaction_date, int room_number, String room_type,
-                                      String checkin_date, String checkout_date, int occupants, String first_name, String last_name,
+                                      String checkin_date, String checkout_date, String first_name, String last_name,
                                       double total_cost, String card_number, int card_month, int card_year, String email,
                                       String phone_number, String country, String address, int zip, String city, String state) {
 
         DataSource dataSource = DatabaseManager.getDataSource();
         String sql = "INSERT INTO Transactions" +
                      "(transaction_id, transaction_date, room_number, room_type," +
-                     "checkin_date, checkout_date, occupants, first_name, last_name," +
+                     "checkin_date, checkout_date, first_name, last_name," +
                      "total_cost, card_number, card_month, card_year, email," +
                      "phone_number, country, address, zip, city, state) " +
-                     "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+                     "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
         try (Connection connection = dataSource.getConnection();
 
@@ -299,20 +349,20 @@ public class DatabaseAccess {
             statement.setString(4, room_type);
             statement.setString(5, checkin_date);
             statement.setString(6, checkout_date);
-            statement.setInt(7, occupants);
-            statement.setString(8, first_name);
-            statement.setString(9, last_name);
-            statement.setDouble(10,total_cost);
-            statement.setString(11, card_number);
-            statement.setInt(12, card_month);
-            statement.setInt(13, card_year);
-            statement.setString(14, email);
-            statement.setString(15, phone_number);
-            statement.setString(16, country);
-            statement.setString(17, address);
-            statement.setInt(18, zip);
-            statement.setString(19, city);
-            statement.setString(20, state);
+            //statement.setInt(7, occupants);
+            statement.setString(7, first_name);
+            statement.setString(8, last_name);
+            statement.setDouble(9,total_cost);
+            statement.setString(10, card_number);
+            statement.setInt(11, card_month);
+            statement.setInt(12, card_year);
+            statement.setString(13, email);
+            statement.setString(14, phone_number);
+            statement.setString(15, country);
+            statement.setString(16, address);
+            statement.setInt(17, zip);
+            statement.setString(18, city);
+            statement.setString(19, state);
 
             int rowsAffected = statement.executeUpdate();
             System.out.println(rowsAffected + " row(s) inserted.");
@@ -320,6 +370,15 @@ public class DatabaseAccess {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public static long getDaysDifference(String startDateString, String endDateString) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+        LocalDate startDate = LocalDate.parse(startDateString, formatter);
+        LocalDate endDate = LocalDate.parse(endDateString, formatter);
+
+        return ChronoUnit.DAYS.between(startDate, endDate);
     }
 
 }

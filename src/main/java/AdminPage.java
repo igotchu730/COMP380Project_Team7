@@ -3,6 +3,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * AdminPage: implements the manager's portal after login. Contains all the administrative functionalities.
+ * @since 2023-10-28
+ * @author Chris Guevara, Alan Chu
+ */
+
 public class AdminPage extends JFrame implements ActionListener {
     private JPanel mainFrame;
     private JLabel adminTitle;

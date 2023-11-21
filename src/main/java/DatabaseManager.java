@@ -1,6 +1,13 @@
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
+/**
+ * DatabaseManager: Establishes the connection to the RDS Database Server.
+ * Contains the database address, username, and password. This file also
+ * @since 2023-10-13
+ * @author Mohammed Khan, Chris Guevara, Alan Chu
+ */
+
 public class DatabaseManager {
 
     private static HikariDataSource dataSource;

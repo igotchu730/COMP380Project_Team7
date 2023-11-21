@@ -5,11 +5,15 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+/**
+ * LoginPage: Verifies the manager's login and acts as a session manager.
+ * @since 2023-10-28
+ * @author Alan Chu, Chris Guevara
+ */
 public class LoginPage extends JFrame implements ActionListener {
 
     public static boolean isLoggedIn = false;
     private JPanel mainFrame;
-
     private JPanel cardPanel;
     private JTextField userField;
     private JPasswordField pwField;

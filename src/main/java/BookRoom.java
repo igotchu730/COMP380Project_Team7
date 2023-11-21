@@ -4,7 +4,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
+
+/**
+ * BookRoom: The page where the user will select a room and duration of stay for their reservations.
+ * @since 2023-11-10
+ * @author Chris Guevara, Mohammed Khan, Alan Chu
+ */
 
 public class BookRoom extends JFrame implements ActionListener {
 
@@ -56,6 +64,10 @@ public class BookRoom extends JFrame implements ActionListener {
     public int doubleAvailability = 0;
     public int famAvailability = 0;
     public int luxAvailability = 0;
+
+    public static String[]infoForReservation;
+    public String checkInDate;
+    public String checkOutDate;
 
 
     BookRoom(){
@@ -187,7 +199,16 @@ public class BookRoom extends JFrame implements ActionListener {
 
     }
 
-    // method to check if date 1 exceeds date 2
+    /**
+     * dateChecker: checks if one date exceeds another date.
+     * @param year1
+     * @param month1
+     * @param day1
+     * @param year2
+     * @param month2
+     * @param day2
+     * @return
+     */
     public static boolean dateChecker(int year1, int month1, int day1, int year2, int month2, int day2) {
         if (year1 > year2) {
             return true;
@@ -231,10 +252,12 @@ public class BookRoom extends JFrame implements ActionListener {
             LocalDate date1 = LocalDate.of(selectedYearIn, selectedMonthIndexIn, selectedDayIn);
             DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
             String checkinDate = date1.format(formatter1);
+            this.checkInDate = checkinDate;
 
             LocalDate date2 = LocalDate.of(selectedYearOut, selectedMonthIndexOut, selectedDayOut);
             DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
             String checkOutDate = date2.format(formatter2);
+            this.checkOutDate = checkOutDate;
 
             //update room availabilty
             roomInfo1.setText(
@@ -334,14 +357,78 @@ public class BookRoom extends JFrame implements ActionListener {
         }
 
         //for book buttons
-        if (e.getSource() == bookButton1 || e.getSource() == bookButton2 ||
-            e.getSource() == bookButton3 || e.getSource() == bookButton4) {
+        if (e.getSource() == bookButton1) {
+
+            String[] temp = new String[4];
+            String roomType = "Single";
+            String roomNum = String.valueOf(DatabaseAccess.getRoomAssignment(roomType,checkInDate,checkOutDate));
+            temp[0] = String.valueOf(checkInDate);
+            temp[1] = String.valueOf(checkOutDate);
+            temp[2] = roomType;
+            temp[3] = roomNum;
+            infoForReservation = temp;
+
+            System.out.println(Arrays.toString(infoForReservation));
+
 
             SwingUtilities.invokeLater(() -> {
                 // Get the instance of Reservation. Only one instance of the frame can open at a time.
                 Reservation reservation = Reservation.getInstance();
             });
+        }
+        if (e.getSource() == bookButton2) {
 
+            String[] temp = new String[4];
+            String roomType = "Double";
+            String roomNum = String.valueOf(DatabaseAccess.getRoomAssignment(roomType,checkInDate,checkOutDate));
+            temp[0] = String.valueOf(checkInDate);
+            temp[1] = String.valueOf(checkOutDate);
+            temp[2] = roomType;
+            temp[3] = roomNum;
+            infoForReservation = temp;
+
+            System.out.println(Arrays.toString(infoForReservation));
+
+            SwingUtilities.invokeLater(() -> {
+                // Get the instance of Reservation. Only one instance of the frame can open at a time.
+                Reservation reservation = Reservation.getInstance();
+            });
+        }
+        if (e.getSource() == bookButton3) {
+
+            String[] temp = new String[4];
+            String roomType = "Family";
+            String roomNum = String.valueOf(DatabaseAccess.getRoomAssignment(roomType,checkInDate,checkOutDate));
+            temp[0] = String.valueOf(checkInDate);
+            temp[1] = String.valueOf(checkOutDate);
+            temp[2] = roomType;
+            temp[3] = roomNum;
+            infoForReservation = temp;
+
+            System.out.println(Arrays.toString(infoForReservation));
+
+            SwingUtilities.invokeLater(() -> {
+                // Get the instance of Reservation. Only one instance of the frame can open at a time.
+                Reservation reservation = Reservation.getInstance();
+            });
+        }
+        if (e.getSource() == bookButton4) {
+
+            String[] temp = new String[4];
+            String roomType = "Luxury";
+            String roomNum = String.valueOf(DatabaseAccess.getRoomAssignment(roomType,checkInDate,checkOutDate));
+            temp[0] = String.valueOf(checkInDate);
+            temp[1] = String.valueOf(checkOutDate);
+            temp[2] = roomType;
+            temp[3] = roomNum;
+            infoForReservation = temp;
+
+            System.out.println(Arrays.toString(infoForReservation));
+
+            SwingUtilities.invokeLater(() -> {
+                // Get the instance of Reservation. Only one instance of the frame can open at a time.
+                Reservation reservation = Reservation.getInstance();
+            });
         }
 
     }

@@ -3,6 +3,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * OurRooms: The page that users go to for information on the hotel and it's rooms.
+ * @since 2023-11-2
+ * @author Mohammed Khan, Alan Chu
+ */
+
 public class OurRooms extends JFrame implements ActionListener {
 
     private JPanel mainFrame;
