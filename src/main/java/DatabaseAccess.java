@@ -1,4 +1,6 @@
 import javax.sql.DataSource;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -299,10 +301,8 @@ public class DatabaseAccess {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
         // Format the current date and time using the defined format
-
         return currentDateTime.format(formatter);
     }
-
 
     /**
      * setReservation: takes user input info during reservation and adds it to the database.
@@ -379,6 +379,43 @@ public class DatabaseAccess {
         LocalDate endDate = LocalDate.parse(endDateString, formatter);
 
         return ChronoUnit.DAYS.between(startDate, endDate);
+    }
+
+    public static void displayQueryResults(JTable resultTable, String query) {
+
+        DataSource dataSource = DatabaseManager.getDataSource();
+
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query);
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+
+            displayResultSet(resultTable, resultSet);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            // Handle the error
+        }
+    }
+
+    private static void displayResultSet(JTable resultTable, ResultSet resultSet) throws SQLException {
+        DefaultTableModel tableModel = new DefaultTableModel();
+
+        // Get column names
+        int columnCount = resultSet.getMetaData().getColumnCount();
+        for (int i = 1; i <= columnCount; i++) {
+            tableModel.addColumn(resultSet.getMetaData().getColumnName(i));
+        }
+
+        // Get row data
+        while (resultSet.next()) {
+            Object[] rowData = new Object[columnCount];
+            for (int i = 1; i <= columnCount; i++) {
+                rowData[i - 1] = resultSet.getString(i);
+            }
+            tableModel.addRow(rowData);
+        }
+
+        // Set the table model to the JTable
+        resultTable.setModel(tableModel);
     }
 
 }

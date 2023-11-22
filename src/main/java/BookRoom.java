@@ -75,6 +75,7 @@ public class BookRoom extends JFrame implements ActionListener {
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setSize(1000,1000);
+        this.setTitle("Book a Room");
         mainScrollPane.getVerticalScrollBar().setUnitIncrement(18);
         DatabaseAccess dbAccess = new DatabaseAccess();
         dateError.setVisible(false);

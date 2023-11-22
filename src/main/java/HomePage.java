@@ -11,7 +11,7 @@ public class HomePage extends JFrame implements ActionListener {
     private JPanel buttonContainer;
     private JButton ourRoomsButton;
     private JButton bookRoomButton;
-    private JButton button3;
+    private JButton viewEditButton;
     private JButton aboutUsButton;
     private JButton adminButton;
     private JSplitPane splitPane;
@@ -37,6 +37,7 @@ public class HomePage extends JFrame implements ActionListener {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setSize(1500,1000);
         this.setMinimumSize(new Dimension(1000, 500));
+        this.setTitle("The Average Hotel");
         this.setVisible(true);
 
         adminButton.addActionListener(this);

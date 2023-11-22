@@ -31,6 +31,7 @@ public class LoginPage extends JFrame implements ActionListener {
         this.setSize(400,500);
         this.setResizable(false);
         this.setLocationRelativeTo(null);
+        this.setTitle("Login");
         this.setVisible(true);
 
         errorMessage.setVisible(false);

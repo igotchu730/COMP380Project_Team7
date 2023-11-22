@@ -45,6 +45,7 @@ public class OurRooms extends JFrame implements ActionListener {
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setSize(1000,1000);
+        this.setTitle("Our Rooms");
 
         mainScrollPane.getVerticalScrollBar().setUnitIncrement(18);
         homeButton1.addActionListener(this);

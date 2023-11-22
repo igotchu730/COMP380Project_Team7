@@ -241,7 +241,7 @@ public class Reservation extends JFrame implements ActionListener {
                                               checkin, checkout, first_name, last_name, total_cost, card_number, card_month, card_year, email,
                                               phone_number, country, address, zip, city, state);
                 this.dispose();
-                JOptionPane.showMessageDialog(null, "Reservation Confirmed:\n Transaction ID: " + transaction_id);
+                JOptionPane.showMessageDialog(null, "Reservation Confirmed:\nTransaction ID: " + transaction_id);
             }
         }
     }
