@@ -80,6 +80,9 @@ public class BookRoom extends JFrame implements ActionListener {
         DatabaseAccess dbAccess = new DatabaseAccess();
         dateError.setVisible(false);
 
+        ImageIcon icon = new ImageIcon(HomePage.class.getResource("Icons/windowLogo.png"));
+        this.setIconImage(icon.getImage());
+
 
         //For single room
         ImageIcon singleRoom = new ImageIcon("src/main/java/Images/SingleRoom.png");

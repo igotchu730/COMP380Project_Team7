@@ -47,6 +47,9 @@ public class AdminPage extends JFrame implements ActionListener {
         this.setLocationRelativeTo(null);
         this.setTitle("Administrator");
 
+        ImageIcon icon = new ImageIcon(HomePage.class.getResource("Icons/windowLogo.png"));
+        this.setIconImage(icon.getImage());
+
         logOutButton.addActionListener(this);
         reportButton.addActionListener(this);
         allTransactionsButtons.addActionListener(this);

@@ -32,6 +32,10 @@ public class LoginPage extends JFrame implements ActionListener {
         this.setResizable(false);
         this.setLocationRelativeTo(null);
         this.setTitle("Login");
+
+        ImageIcon icon = new ImageIcon(HomePage.class.getResource("Icons/windowLogo.png"));
+        this.setIconImage(icon.getImage());
+
         this.setVisible(true);
 
         errorMessage.setVisible(false);

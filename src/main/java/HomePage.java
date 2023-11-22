@@ -38,11 +38,16 @@ public class HomePage extends JFrame implements ActionListener {
         this.setSize(1500,1000);
         this.setMinimumSize(new Dimension(1000, 500));
         this.setTitle("The Average Hotel");
+
+        ImageIcon icon = new ImageIcon(HomePage.class.getResource("Icons/windowLogo.png"));
+        this.setIconImage(icon.getImage());
+
         this.setVisible(true);
 
         adminButton.addActionListener(this);
         ourRoomsButton.addActionListener(this);
         bookRoomButton.addActionListener(this);
+        aboutUsButton.addActionListener(this);
 
         //For logo
         ImageIcon logo = new ImageIcon("src/Icons/hotelLogo.png");
@@ -65,6 +70,9 @@ public class HomePage extends JFrame implements ActionListener {
         }
         if(e.getSource() == bookRoomButton){
             BookRoom bookRoom = new BookRoom();
+        }
+        if(e.getSource() == aboutUsButton){
+            AboutUs aboutUs = new AboutUs();
         }
     }
 

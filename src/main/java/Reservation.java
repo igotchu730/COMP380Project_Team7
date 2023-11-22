@@ -80,6 +80,9 @@ public class Reservation extends JFrame implements ActionListener {
         setLocationRelativeTo(null);
         this.setResizable(false);
 
+        ImageIcon icon = new ImageIcon(HomePage.class.getResource("Icons/windowLogo.png"));
+        this.setIconImage(icon.getImage());
+
         transaction_id = DatabaseAccess.generateRandomId(10);
 
         //take info from book room

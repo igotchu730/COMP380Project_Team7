@@ -47,6 +47,9 @@ public class OurRooms extends JFrame implements ActionListener {
         this.setSize(1000,1000);
         this.setTitle("Our Rooms");
 
+        ImageIcon icon = new ImageIcon(HomePage.class.getResource("Icons/windowLogo.png"));
+        this.setIconImage(icon.getImage());
+
         mainScrollPane.getVerticalScrollBar().setUnitIncrement(18);
         homeButton1.addActionListener(this);
         homeButton2.addActionListener(this);

@@ -1,3 +1,4 @@
+
 /**
  * Main: Our application starts at main. Main will execute an instance of the MainPage class,
  * which allows for users to access all the functionalities we have developed.
@@ -16,4 +17,5 @@ public class Main {
         HomePage homePage = new HomePage();
 
     }
+
 }
