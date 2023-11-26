@@ -48,6 +48,7 @@ public class HomePage extends JFrame implements ActionListener {
         ourRoomsButton.addActionListener(this);
         bookRoomButton.addActionListener(this);
         aboutUsButton.addActionListener(this);
+        viewEditButton.addActionListener(this);
 
         //For logo
         ImageIcon logo = new ImageIcon("src/Icons/hotelLogo.png");
@@ -73,6 +74,16 @@ public class HomePage extends JFrame implements ActionListener {
         }
         if(e.getSource() == aboutUsButton){
             AboutUs aboutUs = new AboutUs();
+        }
+        if(e.getSource() == viewEditButton){
+            try {
+                // Attempt to create an instance of MyClass
+                ViewEdit viewEdit = new ViewEdit();
+            } catch (IllegalArgumentException out) {
+                // Handle the exception, e.g., print an error message
+                System.out.println(out.getMessage());
+            }
+            //ViewEdit viewEdit = new ViewEdit();
         }
     }
 

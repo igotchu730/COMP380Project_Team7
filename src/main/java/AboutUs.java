@@ -28,7 +28,7 @@ public class AboutUs extends JFrame implements ActionListener {
         this.add(mainFrame);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setSize(1000,700);
-        this.setResizable(true);
+        this.setResizable(false);
         this.setLocationRelativeTo(null);
         this.setTitle("About Us");
         mainScrollPane.getVerticalScrollBar().setUnitIncrement(18);
@@ -51,7 +51,7 @@ public class AboutUs extends JFrame implements ActionListener {
         //For CEO
         ImageIcon CEO = new ImageIcon("src/main/java/Images/about1.jpg");
         Image image1 = CEO.getImage();
-        Image newimg1 = image1.getScaledInstance(350, 275,  java.awt.Image.SCALE_SMOOTH);
+        Image newimg1 = image1.getScaledInstance(350, 315,  java.awt.Image.SCALE_SMOOTH);
         CEO = new ImageIcon(newimg1);
         img1.setIcon(CEO);
 

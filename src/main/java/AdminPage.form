@@ -424,7 +424,7 @@
               <background color="-1185565"/>
               <focusable value="false"/>
               <foreground color="-15456434"/>
-              <text value="Home"/>
+              <text value="Back"/>
             </properties>
           </component>
           <vspacer id="bb9d">

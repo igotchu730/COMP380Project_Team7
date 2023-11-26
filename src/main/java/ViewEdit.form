@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ViewEdit">
+  <grid id="27dc6" binding="mainFrame" layout-manager="CardLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="534" height="934"/>
+    </constraints>
+    <properties>
+      <background color="-15456434"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="1a81c" binding="mainPanel" layout-manager="GridLayoutManager" row-count="12" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="Card1"/>
+        </constraints>
+        <properties>
+          <background color="-15456434"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="2ea60" class="javax.swing.JLabel" binding="viewEditTitle">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Copperplate Gothic Light" size="28"/>
+              <foreground color="-2245316"/>
+              <text value="View/Edit Reservation"/>
+              <verticalTextPosition value="3"/>
+            </properties>
+          </component>
+          <vspacer id="d2748">
+            <constraints>
+              <grid row="11" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="d2ea2">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="38d24" class="javax.swing.JButton" binding="viewButton">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1185565"/>
+              <focusable value="false"/>
+              <foreground color="-15456434"/>
+              <text value="View Reservation"/>
+            </properties>
+          </component>
+          <component id="992dd" class="javax.swing.JButton" binding="editButton">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1185565"/>
+              <focusable value="false"/>
+              <foreground color="-15456434"/>
+              <text value="Edit Information"/>
+            </properties>
+          </component>
+          <component id="2974e" class="javax.swing.JButton" binding="homeButton1">
+            <constraints>
+              <grid row="10" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1185565"/>
+              <focusable value="false"/>
+              <foreground color="-15456434"/>
+              <text value="Home"/>
+            </properties>
+          </component>
+          <vspacer id="6a7b3">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <hspacer id="c6728">
+            <constraints>
+              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="dda40">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <vspacer id="568f8">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="743bf">
+            <constraints>
+              <grid row="9" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="1e66b" class="javax.swing.JButton" binding="cancelButton">
+            <constraints>
+              <grid row="8" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1185565"/>
+              <focusable value="false"/>
+              <foreground color="-15456434"/>
+              <text value="Cancel Reservation"/>
+            </properties>
+          </component>
+          <vspacer id="cacad">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="d3233" class="javax.swing.JLabel" binding="resIDTitle">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Copperplate Gothic Light" size="12"/>
+              <foreground color="-2698803"/>
+              <text value="Reservation ID:"/>
+              <verticalTextPosition value="3"/>
+            </properties>
+          </component>
+          <component id="7fb" class="javax.swing.JLabel" binding="resIDLabel">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Copperplate Gothic Light" size="12"/>
+              <foreground color="-2698803"/>
+              <text value="XXXXXXXXXX"/>
+              <verticalTextPosition value="3"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="544cb" binding="viewResPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="Card2"/>
+        </constraints>
+        <properties>
+          <background color="-2698803"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <scrollpane id="26f5" binding="viewScrollPane">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalScrollBarPolicy value="32"/>
+              <verticalScrollBarPolicy value="22"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="7380f" class="javax.swing.JTable" binding="queryViewTable">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <component id="64878" class="javax.swing.JButton" binding="backButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1185565"/>
+              <focusable value="false"/>
+              <foreground color="-15456434"/>
+              <text value="Back"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="56bc6" binding="editResPanel" layout-manager="GridLayoutManager" row-count="32" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="Card3"/>
+        </constraints>
+        <properties>
+          <background color="-2501425"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="feb09" class="javax.swing.JLabel" binding="paymentLabel">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Copperplate Gothic Light" size="18"/>
+              <foreground color="-15456434"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="PAYMENT INFORMATION"/>
+              <verticalTextPosition value="3"/>
+            </properties>
+          </component>
+          <vspacer id="e891a">
+            <constraints>
+              <grid row="31" column="1" row-span="1" col-span="6" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="18d6e">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="6" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="b7dd0">
+            <constraints>
+              <grid row="8" column="1" row-span="1" col-span="6" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="aafc5" class="javax.swing.JTextField" binding="cardNumberField">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="2466" class="javax.swing.JLabel" binding="cardNumberLabel">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Card Number"/>
+            </properties>
+          </component>
+          <component id="e5f79" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Month"/>
+            </properties>
+          </component>
+          <component id="264b8" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Year"/>
+            </properties>
+          </component>
+          <component id="5cae0" class="javax.swing.JTextField" binding="cardYearField">
+            <constraints>
+              <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="5c3a6" class="javax.swing.JTextField" binding="cardMonthField">
+            <constraints>
+              <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <hspacer id="70fb2">
+            <constraints>
+              <grid row="7" column="3" row-span="1" col-span="4" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="21d93">
+            <constraints>
+              <grid row="5" column="3" row-span="1" col-span="4" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="cd50" class="javax.swing.JLabel" binding="guestInfoLabel">
+            <constraints>
+              <grid row="9" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Copperplate Gothic Light" size="18"/>
+              <foreground color="-15456434"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="GUEST INFORMATION"/>
+              <verticalTextPosition value="3"/>
+            </properties>
+          </component>
+          <component id="f16c3" class="javax.swing.JTextField" binding="firstNameField">
+            <constraints>
+              <grid row="11" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d8328" class="javax.swing.JTextField" binding="lastNameField">
+            <constraints>
+              <grid row="13" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="745d9" class="javax.swing.JTextField" binding="emailField">
+            <constraints>
+              <grid row="15" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="c3c1" class="javax.swing.JTextField" binding="phoneField">
+            <constraints>
+              <grid row="17" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="222ad" class="javax.swing.JLabel" binding="firstNameLabel">
+            <constraints>
+              <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="First Name"/>
+            </properties>
+          </component>
+          <component id="e1dbf" class="javax.swing.JLabel" binding="lastNameLabel">
+            <constraints>
+              <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Last Name"/>
+            </properties>
+          </component>
+          <component id="365cb" class="javax.swing.JLabel" binding="emailLabel">
+            <constraints>
+              <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Email"/>
+            </properties>
+          </component>
+          <component id="36b24" class="javax.swing.JLabel" binding="phoneLabel">
+            <constraints>
+              <grid row="16" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Phone"/>
+            </properties>
+          </component>
+          <component id="54e2a" class="javax.swing.JTextField" binding="countryField">
+            <constraints>
+              <grid row="19" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="ac2f" class="javax.swing.JTextField" binding="addressField">
+            <constraints>
+              <grid row="21" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e75de" class="javax.swing.JTextField" binding="zipField">
+            <constraints>
+              <grid row="23" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="f4f6c" class="javax.swing.JLabel" binding="countryLabel">
+            <constraints>
+              <grid row="18" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Country/Region"/>
+            </properties>
+          </component>
+          <component id="ca216" class="javax.swing.JLabel" binding="addressLabel">
+            <constraints>
+              <grid row="20" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Address"/>
+            </properties>
+          </component>
+          <component id="f1b7c" class="javax.swing.JLabel" binding="zipLabel">
+            <constraints>
+              <grid row="22" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="ZIP"/>
+            </properties>
+          </component>
+          <component id="5fe8f" class="javax.swing.JTextField" binding="cityField">
+            <constraints>
+              <grid row="25" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="8fa5f" class="javax.swing.JTextField" binding="stateField">
+            <constraints>
+              <grid row="27" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="2e51" class="javax.swing.JLabel" binding="cityLabel">
+            <constraints>
+              <grid row="24" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="City"/>
+            </properties>
+          </component>
+          <component id="4ff58" class="javax.swing.JLabel" binding="stateLabel">
+            <constraints>
+              <grid row="26" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Calibri" size="14"/>
+              <foreground color="-7896451"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="State"/>
+            </properties>
+          </component>
+          <component id="9edad" class="javax.swing.JButton" binding="changeButton">
+            <constraints>
+              <grid row="29" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1185565"/>
+              <focusable value="false"/>
+              <foreground color="-15456434"/>
+              <text value="Change Information"/>
+            </properties>
+          </component>
+          <vspacer id="bcc2a">
+            <constraints>
+              <grid row="28" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="2e12d">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="6595a" class="javax.swing.JButton" binding="backButton2">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-1185565"/>
+              <focusable value="false"/>
+              <foreground color="-15456434"/>
+              <text value="Back"/>
+            </properties>
+          </component>
+          <hspacer id="c09a7">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="4" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="2c863" class="javax.swing.JLabel" binding="spacer2">
+            <constraints>
+              <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Copperplate Gothic Light" size="36"/>
+              <foreground color="-2501425"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <iconTextGap value="10"/>
+              <text value="X"/>
+              <verticalTextPosition value="1"/>
+            </properties>
+          </component>
+          <component id="3283d" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Copperplate Gothic Light" size="36"/>
+              <foreground color="-2501425"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <iconTextGap value="10"/>
+              <text value="XX"/>
+              <verticalTextPosition value="1"/>
+            </properties>
+          </component>
+          <component id="f1bc7" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="30" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Copperplate Gothic Light" size="36"/>
+              <foreground color="-2501425"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <iconTextGap value="10"/>
+              <text value="XX"/>
+              <verticalTextPosition value="1"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

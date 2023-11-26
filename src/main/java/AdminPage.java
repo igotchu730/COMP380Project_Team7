@@ -90,7 +90,7 @@ public class AdminPage extends JFrame implements ActionListener {
         checkoutYear.setModel(new DefaultComboBoxModel(years));
 
         //home buttons
-        ImageIcon homeIcon = new ImageIcon("src/Icons/homeButtonIcon1.png");
+        ImageIcon homeIcon = new ImageIcon("src/Icons/returnIcon.png");
         Image scaledImage = homeIcon.getImage().getScaledInstance(16, 16, Image.SCALE_SMOOTH);
         homeIcon = new ImageIcon(scaledImage);
         homeButton1.setIcon(homeIcon);

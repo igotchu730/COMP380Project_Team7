@@ -164,7 +164,7 @@ public class Reservation extends JFrame implements ActionListener {
     }
 
     //restrict the fields to only accept numbers
-    private void restrictToNumbers(JTextField textField, int characterLimit) {
+    public static void restrictToNumbers(JTextField textField, int characterLimit) {
         AbstractDocument document = (AbstractDocument) textField.getDocument();
         document.setDocumentFilter(new DocumentFilter() {
             @Override
@@ -190,7 +190,7 @@ public class Reservation extends JFrame implements ActionListener {
         });
     }
 
-    private void limitTextFieldToCharacters(JTextField textField, int limit) {
+    public static void limitTextFieldToCharacters(JTextField textField, int limit) {
         AbstractDocument document = (AbstractDocument) textField.getDocument();
         document.setDocumentFilter(new DocumentFilter() {
             @Override

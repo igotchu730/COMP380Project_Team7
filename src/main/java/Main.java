@@ -1,3 +1,4 @@
+import java.sql.SQLException;
 
 /**
  * Main: Our application starts at main. Main will execute an instance of the MainPage class,
@@ -7,12 +8,10 @@
  * */
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
         DatabaseAccess dbAccess = new DatabaseAccess(); //test
-        dbAccess.queryData(); //test
-        dbAccess.getUserName("admin"); //test
-        dbAccess.getPassword("admin"); //test
+        dbAccess.queryTest(); //test
 
         HomePage homePage = new HomePage();
 

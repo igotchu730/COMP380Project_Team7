@@ -18,7 +18,7 @@ import java.util.*;
  */
 
 public class DatabaseAccess {
-    public static void queryData() {
+    public static void queryTest() {
         DataSource dataSource = DatabaseManager.getDataSource();
 
         try (Connection connection = dataSource.getConnection()) {
@@ -29,7 +29,7 @@ public class DatabaseAccess {
 
                 while (resultSet.next()) {
                     String columnValue = resultSet.getString("test_column");
-                    System.out.println("Value from test: " + columnValue);
+                    System.out.println("Database Test: " + columnValue);
                 }
         } catch (Exception e) {
             e.printStackTrace();
@@ -416,6 +416,44 @@ public class DatabaseAccess {
 
         // Set the table model to the JTable
         resultTable.setModel(tableModel);
+    }
+
+    public static boolean isReserveID(String inputString) {
+        // SQL query to check if the string is present in the table column
+        String sqlQuery = "SELECT COUNT(*) FROM Transactions WHERE transaction_id = ?";
+        DataSource dataSource = DatabaseManager.getDataSource();
+
+        try (
+                Connection connection = dataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(sqlQuery)
+        ) {
+            preparedStatement.setString(1, inputString);
+
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                if (resultSet.next()) {
+                    int count = resultSet.getInt(1);
+                    return count > 0;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace(); // Handle the exception according to your needs
+        }
+
+        return false;
+    }
+
+    public static void executeQuery(String query) {
+        DataSource dataSource = DatabaseManager.getDataSource();
+
+        try (Connection connection = dataSource.getConnection()) {
+
+            String sql = query;
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.executeUpdate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
