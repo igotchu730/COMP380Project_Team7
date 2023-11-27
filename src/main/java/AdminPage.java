@@ -134,7 +134,7 @@ public class AdminPage extends JFrame implements ActionListener {
         if(e.getSource() == allTransactionsButtons){
             cardLayout.show(mainFrame, "Card3");
             this.setResizable(true);
-            this.setSize(1000,1000);
+            //this.setSize(1000,1000);
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
             this.setLocationRelativeTo(null);
             String sampleQuery = "SELECT * FROM Transactions";
@@ -143,7 +143,7 @@ public class AdminPage extends JFrame implements ActionListener {
         if(e.getSource() == rosterButton){
             cardLayout.show(mainFrame, "Card3");
             this.setResizable(true);
-            this.setSize(1000,1000);
+            //this.setSize(1000,1000);
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
             this.setLocationRelativeTo(null);
             String sampleQuery = "SELECT * FROM Rooms_Roster";
@@ -152,7 +152,7 @@ public class AdminPage extends JFrame implements ActionListener {
         if(e.getSource() == roomSearchButton){
             cardLayout.show(mainFrame, "Card3");
             this.setResizable(true);
-            this.setSize(1000,1000);
+            //this.setSize(1000,1000);
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
             this.setLocationRelativeTo(null);
 

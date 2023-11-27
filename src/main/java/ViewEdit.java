@@ -170,18 +170,19 @@ public class ViewEdit extends JFrame implements ActionListener {
         if(e.getSource() == viewButton){
             cardLayout.show(mainFrame, "Card2");
             this.setResizable(true);
-            this.setSize(1000,1000);
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
             this.setLocationRelativeTo(null);
             String sampleQuery = "SELECT * FROM Transactions WHERE transaction_id = '" + userInput + "'";
             DatabaseAccess.displayQueryResults(queryViewTable, sampleQuery);
         }
         if(e.getSource() == editButton){
+            this.setVisible(false);
             cardLayout.show(mainFrame, "Card3");
             spacer4.setText(" ");
             this.setResizable(false);
             this.setSize(600,800);
             this.setLocationRelativeTo(null);
+            this.setVisible(true);
         }
         if(e.getSource() == changeButton && areAllFieldsFilled()){
 
