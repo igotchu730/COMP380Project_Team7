@@ -234,21 +234,41 @@ public class DatabaseAccess {
             for (int num : roomsTaken) {
                 partialSet.add(num);
             }
-            int[] missingInts = new int[roomsTotal.length - roomsTaken.length];
-            int index = 0;
 
+            int missingIntsLength = roomsTotal.length - roomsTaken.length;
+            int[] missingInts = new int[missingIntsLength];
+
+            int index = 0;
             for (int num : roomsTotal) {
                 if (!partialSet.contains(num)) {
                     missingInts[index] = num;
                     index++;
                 }
+                // Break the loop if we have found enough missing integers
+                if (index == missingIntsLength) {
+                    break;
+                }
+            }
+
+            // Check if there are missing rooms
+            if (index > 0) {
+                // For testing
+                System.out.println(Arrays.toString(missingInts));
+
+                // Return the first element
+                return missingInts[0];
+            } else {
+                // No missing rooms, you might want to handle this case accordingly
+                System.out.println("All rooms are booked.");
+                // Return a suitable value or throw an exception, depending on your requirements
+                return -1; // or throw new RuntimeException("All rooms are booked.");
             }
 
             //for testing
-            System.out.println(Arrays.toString(missingInts));
+            //System.out.println(Arrays.toString(missingInts));
 
             //return first element
-            return missingInts[0];
+            //return missingInts[0];
 
         } catch (SQLException e) {
             e.printStackTrace();

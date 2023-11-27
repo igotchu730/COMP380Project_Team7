@@ -78,6 +78,7 @@ public class Reservation extends JFrame implements ActionListener {
         this.setTitle("Reservation");
         mainScrollPane.getVerticalScrollBar().setUnitIncrement(18);
         setLocationRelativeTo(null);
+        spacer4.setText(" ");
         this.setResizable(false);
 
         ImageIcon icon = new ImageIcon(HomePage.class.getResource("Icons/windowLogo.png"));
@@ -246,6 +247,9 @@ public class Reservation extends JFrame implements ActionListener {
                 this.dispose();
                 JOptionPane.showMessageDialog(null, "Reservation Confirmed:\nTransaction ID: " + transaction_id);
             }
+        }
+        if(e.getSource() == bookReservationButton && !areAllFieldsFilled()){
+            spacer4.setText("Please fill all fields.");
         }
     }
 

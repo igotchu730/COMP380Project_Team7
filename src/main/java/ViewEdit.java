@@ -46,6 +46,7 @@ public class ViewEdit extends JFrame implements ActionListener {
     private JButton changeButton;
     private JButton backButton2;
     private JLabel spacer2;
+    private JLabel spacer4;
 
 
     String userInput;
@@ -60,6 +61,7 @@ public class ViewEdit extends JFrame implements ActionListener {
         this.setLocationRelativeTo(null);
         this.setTitle("View/Edit Reservation");
         //mainScrollPane.getVerticalScrollBar().setUnitIncrement(18);
+        spacer4.setText(" ");
 
         ImageIcon icon = new ImageIcon(HomePage.class.getResource("Icons/windowLogo.png"));
         this.setIconImage(icon.getImage());
@@ -153,12 +155,14 @@ public class ViewEdit extends JFrame implements ActionListener {
         }
         if(e.getSource() == backButton){
             cardLayout.show(mainFrame, "Card1");
+            spacer4.setText(" ");
             this.setResizable(false);
             this.setSize(500,400);
             this.setLocationRelativeTo(null);
         }
         if(e.getSource() == backButton2){
             cardLayout.show(mainFrame, "Card1");
+            spacer4.setText(" ");
             this.setResizable(false);
             this.setSize(500,400);
             this.setLocationRelativeTo(null);
@@ -173,6 +177,7 @@ public class ViewEdit extends JFrame implements ActionListener {
         }
         if(e.getSource() == editButton){
             cardLayout.show(mainFrame, "Card3");
+            spacer4.setText(" ");
             this.setResizable(false);
             this.setSize(600,800);
             this.setLocationRelativeTo(null);
@@ -223,6 +228,9 @@ public class ViewEdit extends JFrame implements ActionListener {
                 this.dispose();
                 JOptionPane.showMessageDialog(null, "Reservation Canceled");
             }
+        }
+        if(e.getSource() == changeButton && !areAllFieldsFilled()){
+            spacer4.setText("Please fill all fields.");
         }
 
     }
