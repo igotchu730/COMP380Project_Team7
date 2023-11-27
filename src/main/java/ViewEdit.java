@@ -172,6 +172,7 @@ public class ViewEdit extends JFrame implements ActionListener {
             this.setResizable(true);
             this.setSize(1000,1000);
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            this.setLocationRelativeTo(null);
             String sampleQuery = "SELECT * FROM Transactions WHERE transaction_id = '" + userInput + "'";
             DatabaseAccess.displayQueryResults(queryViewTable, sampleQuery);
         }

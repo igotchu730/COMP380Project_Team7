@@ -136,6 +136,7 @@ public class AdminPage extends JFrame implements ActionListener {
             this.setResizable(true);
             this.setSize(1000,1000);
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            this.setLocationRelativeTo(null);
             String sampleQuery = "SELECT * FROM Transactions";
             DatabaseAccess.displayQueryResults(queryTable, sampleQuery);
         }
@@ -144,6 +145,7 @@ public class AdminPage extends JFrame implements ActionListener {
             this.setResizable(true);
             this.setSize(1000,1000);
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            this.setLocationRelativeTo(null);
             String sampleQuery = "SELECT * FROM Rooms_Roster";
             DatabaseAccess.displayQueryResults(queryTable, sampleQuery);
         }
@@ -152,6 +154,7 @@ public class AdminPage extends JFrame implements ActionListener {
             this.setResizable(true);
             this.setSize(1000,1000);
             this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            this.setLocationRelativeTo(null);
 
             String CI = "'" + checkinYear.getSelectedItem() + "-" + checkinMonth.getSelectedItem() + "-" + checkinDay.getSelectedItem() + "'";
             String CO = "'" + checkoutYear.getSelectedItem() + "-" + checkoutMonth.getSelectedItem() + "-" + checkoutDay.getSelectedItem() + "'";
